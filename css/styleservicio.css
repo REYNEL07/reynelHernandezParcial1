@@ -1,0 +1,105 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #a9f9d9;
+}
+
+/* Enlace de inicio */
+a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+a img {
+    transition: transform 0.3s ease;
+}
+
+a:hover img {
+    transform: scale(1.1);
+}
+
+/* Título de la página */
+p:first-of-type {
+    font-size: 24px;
+    color: #0066cc;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 20px;
+}
+
+/* Título de servicios */
+h2 {
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+/* Cada servicio */
+.servicio {
+    display: flex;
+    margin-bottom: 40px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del servicio */
+.servicio img {
+    width: 40%;
+    object-fit: cover;
+}
+
+/* Texto del servicio */
+.texto {
+    padding: 20px;
+    width: 60%;
+}
+
+.texto h3 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    text-align: justify;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .servicio {
+        flex-direction: column;
+    }
+    
+    .servicio img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .texto {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+}

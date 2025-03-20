@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #a9f9d9;
+}
+
+/* Título de bienvenida - cambiado el selector */
+body > p {
+    font-size: 24px;
+    color: #0066cc;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Enlace de inicio */
+a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+a img {
+    transition: all 0.3s ease; /* Cambiado a 'all' para mayor compatibilidad */
+}
+
+a:hover img {
+    transform: scale(1.1);
+}
+
+/* Contenedor del formulario */
+.container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Título del formulario */
+h2 {
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0066cc;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Campos de entrada */
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Simplificado el selector de focus */
+input:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+/* Eliminado los estilos específicos para input[type="number"] que pueden causar problemas */
+
+/* Botón de enviar */
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Añadido 'ease' para mayor compatibilidad */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    input {
+        padding: 8px;
+    }
+    
+    button {
+        padding: 10px;
+    }
+}

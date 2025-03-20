@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #a9f9d9;
+}
+
+/* Título principal */
+h1 {
+    color: #0066cc; /* Color azul corporativo similar a Argos */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+/* Enlaces e iconos de navegación */
+a {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+a img {
+    transition: transform 0.3s ease;
+}
+
+a:hover img {
+    transform: scale(1.1);
+}
+
+/* Imagen principal de la empresa */
+.img-empresa {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.img-empresa img {
+    max-width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de noticias */
+.noticias {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.noticias h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.noticias p {
+    text-align: justify;
+}
+
+/* Estilos para los diferentes formatos de texto */
+strong {
+    color: #0066cc;
+    display: block;
+    margin-bottom: 10px;
+}
+
+i, em {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+small {
+    display: block;
+    color: #777;
+    margin: 15px 0;
+}
+
+/* Fórmula matemática */
+p:has(sub), p:has(sup) {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Textos con formato especial */
+mark {
+    background-color: #ffffcc;
+    padding: 3px 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+ins {
+    text-decoration: underline;
+    color: #28a745;
+    display: block;
+    margin-bottom: 10px;
+}
+
+del {
+    color: #dc3545;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+body > p {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Iconos de redes sociales */
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.icon a {
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    
+    .img-empresa img {
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+}
